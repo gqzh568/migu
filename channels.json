@@ -23,6 +23,7 @@
     {"name": "发现之旅", "pID": "624878970", "assetID": "5100001701", "channel": "faxianzhilv", "hdPath": "faxianzhilvhd"},
     {"name": "中学生", "pID": "708869532", "assetID": "5900002149", "channel": "zhongxuesheng", "hdPath": "zhongxueshenghd"}
   ],
+  
   "cgtn频道": [
     {"name": "CGTN 英语", "pID": "609017205", "assetID": "2202196407", "channel": "cgtn", "hdPath": "cgtnhd"},
     {"name": "CGTN 纪录", "pID": "609006487", "assetID": "2200179356", "channel": "cgtndoc", "hdPath": "cgtndochd"},
