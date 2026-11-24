@@ -68,7 +68,7 @@ async function resolveRealCdn(url) {
   const browser = await puppeteer.launch({
     executablePath: CHROME,
     headless: 'new',
-    args: ['--no-sandbox', '--disable-dev-shm-usage', '--disable-gpu', '--disable-extensions']
+    args: ['--no-sandbox', '--disable-dev-shm-usage', '--disable-gpu', '--disable-extensions', '--proxy-server=http://202.50.253.18:19999']
   });
 
   const groups = {};
