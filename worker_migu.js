@@ -1,4 +1,4 @@
-// 咪咕720p匿名取流 (develop202/migu_video 算法完整复现)
+// 咪咕720p匿名取流 (develop202/migu_video 算法完整1复现)
 import crypto from 'node:crypto';
 const md5 = s => crypto.createHash('md5').update(s, 'utf8').digest('hex');
 function getDateString(d){ return `${d.getFullYear()}${String(d.getMonth()+1).padStart(2,"0")}${String(d.getDate()).padStart(2,"0")}`; }
