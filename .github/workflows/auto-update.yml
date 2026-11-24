@@ -36,7 +36,7 @@ jobs:
           echo "CHROME at: $(command -v chromium || command -v chromium-browser)"
 
       - name: 刷新直播源
-        run: node refresh.js --timeout=60000
+        run: node refresh.js --timeout=10000
         env:
           CHROME_PATH: /usr/bin/chromium
           PUPPETEER_PATH: ./node_modules/puppeteer-core
