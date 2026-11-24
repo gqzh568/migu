@@ -3,7 +3,7 @@ name: 自动刷新咪咕央视直播源
 on:
   schedule:
     # 每 30 分钟刷新一次(咪咕 token 约 4 小时有效)
-    - cron: '*/30 * * * *'
+    - cron: '0 * * * *'
   workflow_dispatch:        # 手动触发
   push:
     branches: [master]
@@ -36,7 +36,7 @@ jobs:
           echo "CHROME at: $(command -v chromium || command -v chromium-browser)"
 
       - name: 刷新直播源
-        run: node refresh.js --timeout=10000
+        run: node refresh.js --timeout=60000
         env:
           CHROME_PATH: /usr/bin/chromium
           PUPPETEER_PATH: ./node_modules/puppeteer-core
